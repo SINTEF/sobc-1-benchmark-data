@@ -16,6 +16,10 @@ Second, we will share results and data from the experiments we conduct using the
 
 The SOBC-1 is heavily used within projects at SINTEF Ocean, and therefore also in scientific publications. Below is a (*possible non-exhaustive*) list of publications made so far. 
 
-- Sauder, T., Alterskjær, S.A., 2022, *Hydrodynamic testing of wind-assisted cargo ships using a cyber–physical method*. Ocean Engineering, Volume 234. [DOI](https://doi.org/10.1016/j.oceaneng.2021.110206)
+- Lindstad, E., Stokke, T., Alteskjær, A., Borgen, H. and Sandaas, I (2022): *Ship of the future – A slender dry-bulker with wind assisted propulsion*. Maritime Transport Research, Volume 3. [DOI](https://doi.org/10.1016/j.martra.2022.100055)
 
-- Johannessen, J.T., Sileo, L., Koushan, K., Krasilnikov, V., Froitzheim, S., Schulze, R., 2024, *Numerical and experimental study of a series of contrarotating propellers*. Eighth International Symposium on Marine Propulsors, Berling, Gerimany. [Link](https://d-nb.info/132802640X/34) 
+- Sauder, T., Alterskjær, S.A., 2022: *Hydrodynamic testing of wind-assisted cargo ships using a cyber–physical method*. Ocean Engineering, Volume 234. [DOI](https://doi.org/10.1016/j.oceaneng.2021.110206)
+
+- Krasilnikov, V., Skjefstad, V., 2023: *SOBC-1 – an open science validation dataset for conventional and wind-assisted ship propulsion*. 25th Numerical Towing Tank Symposium, Ericeira, Portugal. [Link](https://blueoasis.pt/wp-content/uploads/2023/10/Nutts2023_proceedings_v4.pdf)
+
+- Johannessen, J.T., Sileo, L., Koushan, K., Krasilnikov, V., Froitzheim, S., Schulze, R., 2024: *Numerical and experimental study of a series of contrarotating propellers*. Eighth International Symposium on Marine Propulsors, Berling, Gerimany. [Link](https://d-nb.info/132802640X/34) 
