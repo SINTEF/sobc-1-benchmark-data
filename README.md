@@ -6,11 +6,17 @@ There are some terms and conditions for this data. Please read the [Data Use Agr
 
 ## Repository structure
 
-Two types of data are stored on this repository. 
+Three types of data are stored on this repository. 
 
 First, geometry data for the SOBC-1 is shared in the form of CAD files. This is, for instance, useful if you want to use this ship in some simulation, such as CFD. All geometry data for the ship can be found in the folder `geometry`.
 
-Second, we will share results and data from the experiments we conduct using the SOBC-1 in our [hydrodyanmic laboratories](https://www.sintef.no/sintef-ocean/laboratorier/). These results can be found in the `experimental results` folder.
+Second, we will share results and data from the experiments we conduct using the SOBC-1 in our [hydrodynamic laboratories](https://www.sintef.no/sintef-ocean/laboratorier/). These results can be found in the `experimental results` folder.
+
+Third, we have shared some photos of SOBC-1 in the `media` folder. This is mainly for illustrative purposes. An example can be seen below:
+
+![Hybrid test using SOBC1](/media/Hybrid_Flettner_Setup.jpg "SOBC-1 used in hybrid testing of wind propulsion devices")
+
+To get an overview of the background of the SOBC-1, you can read the report located [here](SO_Benchmark_Bulk_Carrier_SOBC-1_VKr_ICN-Meeting-030522.pdf)
 
 ## Publications using the SOBC-1
 
