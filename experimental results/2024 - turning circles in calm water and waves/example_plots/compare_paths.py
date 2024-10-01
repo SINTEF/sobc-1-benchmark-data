@@ -9,19 +9,17 @@ import numpy as np
 if __name__ == '__main__':
 
     cases_to_compare = [
-        "../calm water/run_2010_calm_water_turn_to_starboard.csv",
-        "../different wave lengths/run_3100_wave_height_2_10_period_9_00_turn_to_starboard.csv",
-        "../different wave lengths/run_3110_wave_height_3_24_period_11_16_turn_to_starboard.csv",
-        "../different wave lengths/run_3121_wave_height_3_72_period_11_97_turn_to_starboard.csv",
-        "../different wave lengths/run_3130_wave_height_4_44_period_13_06_turn_to_starboard.csv",
+        "../time_series/test2010_calm_water_turn_port.csv",
+        "../time_series/test3110_wave_height_3.24_period_11.16_direction_0_turn_port.csv",
+        "../time_series/test4020_wave_height_3.24_period_11.16_direction_90_turn_port.csv",
+        "../time_series/test4070_wave_height_3.24_period_11.16_direction_180_turn_port.csv"
     ]
 
     case_names = [
         "calm water",
-        "wave height 2.1 m, period 9.00 s",
-        "wave height 3.24 m, period 11.16 s",
-        "wave height 3.72 m, period 11.97 s",
-        "wave height 4.44 m, period 13.06 s",
+        "wave direction 0.0 degrees",
+        "wave direction 90.0 degrees",
+        "wave direction 180.0 degrees"
     ]
 
     w_plot = 16
@@ -39,12 +37,14 @@ if __name__ == '__main__':
         plot_indices = np.where(t < t_max)
 
         x = df["XPOS [m]"].to_numpy()
-        y = df["YPOS [m]"].to_numpy()
+        y = -df["YPOS [m]"].to_numpy() # Reverse the axis, to view the data as if viewed from above
 
         x -= x[0]
         y -= y[0]
         
         plt.plot(x[plot_indices], y[plot_indices], label=name)
+
+    plt.title("Effect of wave direction with wave height 3.24 m and period 11.16 s")
 
     plt.xlabel("x [m]")
     plt.ylabel("y [m]")

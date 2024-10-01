@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 if __name__ == '__main__':
-    df = pd.read_csv("../calm water/run_2000_calm_water_turn_to_port.csv") # Switch the path to load another case
+    df = pd.read_csv("../time_series/test2010_calm_water_turn_port.csv") # Switch the path to load another case
     
     w_plot = 16
     fig = plt.figure(figsize=(w_plot, w_plot / 1.85))
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     time_ax_list = [ax2, ax3, ax4]
 
     ax1.set_title("Path")
-    ax1.plot(df["XPOS [m]"], df["YPOS [m]"])
+    ax1.plot(df["XPOS [m]"], -df["YPOS [m]"]) # plot negative y-axis to view the data as if viewed from above
     ax1.set_xlabel("x [m]")
     ax1.set_ylabel("y [m]")
 
