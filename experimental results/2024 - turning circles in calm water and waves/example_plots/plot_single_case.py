@@ -1,5 +1,5 @@
 '''
-Simple example showing how to load the csv file, and plot the path, speed, rudder angle and forces.
+Simple example showing how to load a csv file, and plot the path, speed, rudder angle and forces.
 '''
 
 import matplotlib.pyplot as plt
@@ -19,7 +19,7 @@ if __name__ == '__main__':
     time_ax_list = [ax2, ax3, ax4]
 
     ax1.set_title("Path")
-    ax1.plot(df["XPOS [m]"], -df["YPOS [m]"]) # plot negative y-axis to view the data as if viewed from above
+    ax1.plot(df["XPOS [m]"], -df["YPOS [m]"]) # plot negative y-axis to view the data as if the vessel is viewed from above
     ax1.set_xlabel("x [m]")
     ax1.set_ylabel("y [m]")
 

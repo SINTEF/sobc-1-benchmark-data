@@ -37,7 +37,7 @@ if __name__ == '__main__':
         plot_indices = np.where(t < t_max)
 
         x = df["XPOS [m]"].to_numpy()
-        y = -df["YPOS [m]"].to_numpy() # Reverse the axis, to view the data as if viewed from above
+        y = -df["YPOS [m]"].to_numpy() # Reverse the axis, to view the data as if the vessel is viewed from above
 
         x -= x[0]
         y -= y[0]

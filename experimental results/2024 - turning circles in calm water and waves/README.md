@@ -26,9 +26,27 @@ The results are shared in the form of time series stored in `.csv` files. The va
 
 ### Folder structure
 
-The raw results from the the experiments are located in the "[time_series](./time_series/)" folder. Each file has a test number and a name that described the test conditions. An overview of conditions in the different tests are also found in the excel file [test_overview.xlsx](./test_overview.xlsx).
+The raw results from the the experiments are located in the "[time_series](./time_series/)" folder. Each file has a test number and a name that described the test conditions. An overview of conditions in the different tests are also found in the Table 1
 
-There is also a folder called "[example_plots](./example_plots/)", which contains simple `Python` scripts that show how to load and plot the data using common libraries such as [Numpy](https://numpy.org/), [Matplotlib](https://matplotlib.org/) and [Pandas](https://pandas.pydata.org/). 
+The folder called "[example_plots](./example_plots/)", contains simple `Python` scripts that show how to load and plot the data using common libraries such as [Numpy](https://numpy.org/), [Matplotlib](https://matplotlib.org/) and [Pandas](https://pandas.pydata.org/). 
+
+#### Table 1
+| Test number | Turn direction | Wave height, full-scale [m] | Wave period, full-scale [s] | Wave direction [deg] |
+|-------------|----------------|-----------------------------|-----------------------------|----------------------|
+| 2000 | Starboard | 0.00 | 0.00  | 0 |
+| 2010 | Port      | 0.00 | 0.00  | 0 |
+| 3100 | Port      | 2.10 | 9.00  | 0 |
+| 3110 | Port      | 3.24 | 11.16 | 0 |
+| 3120 | Port      | 3.72 | 11.97 | 0 |
+| 3130 | Port      | 4.44 | 13.06 | 0 |
+| 3140 | Starboard | 3.24 | 11.16 | 0 |
+| 3150 | Port      | 3.88 | 11.16 | 0 |
+| 3160 | Port      | 4.32 | 11.16 | 0 |
+| 3170 | Port      | 4.86 | 11.16 | 0 |
+| 4010 | Port      | 3.24 | 11.16 | 45 |
+| 4020 | Port      | 3.24 | 11.16 | 90 |
+| 4051 | Port      | 3.24 | 11.16 | 135 |
+| 4070 | Port      | 3.24 | 11.16 | 180 |
 
 ### Measured variables
 Below is a list of instrumentation and measurements available for the performed tests, as well as the corresponding variable names in the `.csv` files for each measurement. 
@@ -48,15 +66,18 @@ Motion measurements form the MoCap system are sampled at 50 Hz. Since this is a 
 
 During the tests, an on‐board autopilot controls the heading and the propeller RPS. The tests were carried out with constant propeller revolutions to keep the average specified vessel speed.
 
-### Coordinate system and placements
+### Coordinate system and sensor placements
 The position of the vessel is measured in a right-handed coordinate system placed in the middle of the ocean basin, with the z-axis pointing down. In other words, when the vessel is moving along the positive x-axis, a starboard turns means a turn towards the positive y-axis. **Note**: in the example plots, the y-axis is set to be negative, which means the turn direction will be as if the vessel is seen from above.
 
 The wave direction is measured relative to the x-axis, where a positive angle represent a left-handed rotation around the z-axis. In other words, a +90 degrees wave direction means that the waves come from the port side, pushing the ship towards the starboard side relative to the initial path.
 
 Most variables are reported in a ship-fixed coordinate system. This is located at the midpoint between the fore and aft perpendicular, at the base line (bottom of the vessel), and center line (midway between port and starboard). The x-axis is pointing towards the bow, the y-axis towards starboard side, and the z-axis downwards.
 
-The measurements of the accelerations and relative wave amplitude comes from sensors placed at different locations. The locations are given in the table below:
+The measurements of the accelerations and relative wave amplitude comes from sensors placed at different locations. The locations are given in Table 2:
 
+The rudder torsional moment is measured around the rudder axis, i.e., the aft perpendicular.
+
+#### Table 2: sensor placement
 | Sensor | x-position, full-scale [m] | y-position, full-scale [m] | z-position, full-scale [m] |
 |--------|----------------------------|----------------------------|----------------------------|
 | Accelerometer 1 | 221.4 | -0.2  | -17.0 |
@@ -66,6 +87,6 @@ The measurements of the accelerations and relative wave amplitude comes from sen
 | Starboard wave tape transducer| 189.9 | Flush to hull starboard | 0-10 |
 | Port wave tape transducer | 190.1 | Flush to hull port | 0-10 |
 
-The rudder torsional moment is measured around the rudder axis, i.e., the aft perpendicular.
+
 
 
