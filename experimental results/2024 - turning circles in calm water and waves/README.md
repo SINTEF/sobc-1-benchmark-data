@@ -28,12 +28,7 @@ The results are shared in the form of time series stored in `.csv` files. The va
 
 ### Folder structure
 
-The files are grouped into sub-folders where different parameters were varied. The groups are as follows:
-
-- The folder "[calm water](./calm%20water/)" contains maneuvering tests without waves
-- The folder "[different wave directions](./different%20wave%20directions/)" contain tests where the direction of the incoming waves were varied, while other parameters were kept fixed. The wave height was set to 3.24 m and the period to 11.16 seconds, measured in full-scale.
-- The folder "[different wave lengths](./different%20wave%20lengths/)" contain tests where the both the height and period of the waves where varied, while the direction was set to head waves relative to the initial direction of the vessel. The wave height was varied between 2.1 m to 4.44 m, while the period was varied between 9.0 seconds to 13.06 seconds, measured in full-scale.
-- The folder "[different wave steepness](./different%20wave%20steepness/)" contain tests where the period and direction was locked to 11.16 seconds and head waves respectively, while the wave height was varied between 3.88 m to 4.86 m in full scale. 
+The raw results from the the experiments are located in the "[time_series](./time_series/)" folder. 
 
 In addition, there is a folder called "[example_plots](./example_plots/)", which contains simple `Python` scripts that show how to load and plot the data using common libraries such as [Numpy](https://numpy.org/), [Matplotlib](https://matplotlib.org/) and [Pandas](https://pandas.pydata.org/). 
 
