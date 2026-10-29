@@ -1,7 +1,7 @@
 # Turning circles for SOBC-1 in calm water and in regular waves
 
 ## Introduction 
-This folder contains results from maneuvering tests performed in [SINTEF Ocean's ocean basin](https://www.sintef.no/en/all-laboratories/ocean-laboratory/), in February 2024. There were two main goals with the tests:
+This folder contains results from maneuvering tests performed in [SINTEF Ocean's ocean basin](https://www.sintef.no/en/all-laboratories/ocean-basin/), in February 2024. There were two main goals with the tests:
 
 1) Measure the calm water maneuvering characteristics of SOBC-1
 2) Quantify how the maneuvering is affected by different wave conditions.
@@ -12,7 +12,7 @@ All data currently shared is from turning circle tests. The vessel was first acc
 This maneuver was performed for different wave conditions, meaning regular waves with different height, periods, and directions relative to the start of the turning circle maneuver. 
 
 ## Model specification
-The physical model used for this experiment was the same as the one used for measuring the calm water resistance, found [here](./../2021%20-%20calm%20water%20resistance%20and%20populsion/). Please see the report in the linked folder for details on the main dimensions and geometry. In short, the model scale was 1:32.0, and the loading condition was the design water line, which corresponds to a draught of 11.0 m in full-scale. 
+The physical model used for this experiment was the same as the one used for measuring the calm water resistance, found [here](./../2021%20-%20calm%20water%20resistance%20and%20propulsion/). Please see the report in the linked folder for details on the main dimensions and geometry. In short, the model scale was 1:32.0, and the loading condition was the design water line, which corresponds to a draught of 11.0 m in full-scale. 
 
 The rudder had a full‐scale steering rate of 2.32 deg/s corresponding to 13.13 deg/s for the scaled model. 
 
