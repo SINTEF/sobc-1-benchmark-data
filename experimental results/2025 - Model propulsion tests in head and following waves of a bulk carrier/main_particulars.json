@@ -1,0 +1,65 @@
+{
+    "source": "Steen, S., Portillo-Juan, A., Saettone, S. (2025): Model propulsion tests in head and following waves of a bulk carrier. Applied Ocean Research 154, 104405. https://doi.org/10.1016/j.apor.2024.104405",
+    "model_scale": 32.0,
+    "ship": {
+        "description": "Table 1 in the paper. Main particulars of ship and model, design waterline.",
+        "particulars": {
+            "length_overall":               {"symbol": "LOA", "unit": "m",  "ship": 200.00,  "model": 6.25},
+            "length_in_waterline":          {"symbol": "LWL", "unit": "m",  "ship": 196.94,  "model": 6.15},
+            "beam":                         {"symbol": "B",   "unit": "m",  "ship": 32.20,   "model": 1.01},
+            "draught":                      {"symbol": "T",   "unit": "m",  "ship": 11.00,   "model": 0.34},
+            "trim":                         {"symbol": "t",   "unit": "m",  "ship": 0.00,    "model": 0.00},
+            "volume_displacement":          {"symbol": "V",   "unit": "m3", "ship": 48957,   "model": 1.49},
+            "prismatic_coefficient":        {"symbol": "CP",  "unit": "-",  "ship": 0.73,    "model": 0.73},
+            "block_coefficient":            {"symbol": "CB",  "unit": "-",  "ship": 0.70,    "model": 0.70},
+            "longitudinal_center_of_buoyancy_from_AP": {"symbol": "LCB", "unit": "m", "ship": 99.33, "model": 3.10},
+            "wetted_surface":               {"symbol": "S",   "unit": "m2", "ship": 8576.70, "model": 8.38},
+            "vertical_center_of_gravity":   {"symbol": "VCG", "unit": "m",  "ship": 11.68,   "model": 0.37},
+            "longitudinal_radius_of_gyration": {"symbol": "ryy", "unit": "m", "ship": 46.28, "model": 1.45}
+        },
+        "model_values_given_with_more_digits_in_the_text": {
+            "length_in_waterline_m": 6.154,
+            "beam_m": 1.006,
+            "draught_m": 0.344,
+            "vertical_center_of_gravity_m": 0.365,
+            "longitudinal_radius_of_gyration_m": 1.446
+        }
+    },
+    "propeller": {
+        "description": "Table 2 in the paper. Model propeller particulars. 4-bladed propeller with moderate skew.",
+        "particulars": {
+            "number_of_blades":             {"symbol": "Z",      "unit": "-",  "ship": 4,     "model": 4},
+            "propeller_diameter":           {"symbol": "D",      "unit": "mm", "ship": 6750,  "model": 210.94},
+            "pitch_ratio_at_0.7R":          {"symbol": "P/D0.7", "unit": "-",  "ship": 0.97,  "model": 0.97},
+            "chord_length_at_0.7R":         {"symbol": "c0.7",   "unit": "mm", "ship": 2166,  "model": 67.69},
+            "thickness_at_0.7R":            {"symbol": "t0.7",   "unit": "mm", "ship": 70.40, "model": 2.20},
+            "blade_area_ratio":             {"symbol": "AE/A0",  "unit": "-",  "ship": 0.48,  "model": 0.48},
+            "hub_diameter_ratio":           {"symbol": "d/D",    "unit": "-",  "ship": 0.25,  "model": 0.25}
+        },
+        "open_water_test": {
+            "propeller_revolutions_Hz": 7.3,
+            "average_reynolds_number": 2.1e5
+        }
+    },
+    "test_setup": {
+        "facility": "Large towing tank at the Marine Technology Centre in Trondheim, Norway (L x B x T = 250 x 10.5 x 5 m), with a double-flap wave maker",
+        "model_speeds_m_s": [0.773, 1.000, 1.364, 1.500],
+        "froude_numbers_based_on_LWL": [0.099, 0.129, 0.176, 0.193],
+        "connection_to_carriage": "Stiff spring arrangement with a transverse boom amidships, wires in a crow-foot arrangement. Free to heave and pitch, yaw minimized.",
+        "spring_stiffness_N_m": 250.0,
+        "natural_period_in_surge_model_scale_s": 15.6,
+        "wave_steepness_H_over_lambda": 0.025,
+        "sampling_frequency_Hz": 200,
+        "low_pass_filter_Hz": 20,
+        "coordinate_system": "Right-handed, fixed in the moving towing carriage: x positive towards the bow, y towards starboard, z downwards. Wave elevation is positive up.",
+        "headings": {"head_waves": 180, "following_waves": 0}
+    },
+    "analysis_constants": {
+        "description": "Values used in the spreadsheet for the derived quantities in data/self_propulsion_runs.csv and data/load_variation.csv (model scale).",
+        "water_density_kg_m3": 1000.0,
+        "gravity_m_s2": 9.80665,
+        "propeller_diameter_m": 0.2109375,
+        "beam_used_in_CAW_m": 1.009375,
+        "LPP_used_in_CAW_m": 5.9375
+    }
+}
