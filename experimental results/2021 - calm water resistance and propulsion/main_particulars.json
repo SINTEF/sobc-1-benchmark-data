@@ -1,0 +1,163 @@
+{
+    "source": "SINTEF Ocean report 302006033-09, 'Calm Water performance tests, SOBC-1', version 1.0, August 25, 2021. Enclosures E-2, E-3, E-4.1, E-5, E-7, E-9 and E-10.",
+    "hull_model": "M3246A",
+    "propeller_model": "P1608",
+    "model_scale": 32.0,
+    "propeller": {
+        "particulars": {
+            "propeller_diameter":       {"symbol": "D",       "unit": "mm", "ship": 6750,   "model": 210.94},
+            "pitch_ratio_at_0.7R":      {"symbol": "P/D0.7",  "unit": "-",  "ship": 0.970,  "model": 0.970},
+            "blade_area_ratio":         {"symbol": "AE/A0",   "unit": "-",  "ship": 0.483,  "model": 0.483},
+            "number_of_blades":         {"symbol": "Z",       "unit": "-",  "ship": 4,      "model": 4},
+            "chord_diameter_ratio_at_0.7R":   {"symbol": "c/D0.7R", "unit": "-", "ship": 0.3209, "model": 0.3209},
+            "thickness_chord_ratio_at_0.7R":  {"symbol": "t/C0.7R", "unit": "-", "ship": 0.0324, "model": 0.0324},
+            "hub_diameter_ratio":       {"symbol": "d/D",     "unit": "-",  "ship": 0.252,  "model": 0.252}
+        },
+        "open_water_test_conditions": {
+            "propeller_revolutions_Hz": 14.00,
+            "water_temperature_degC": 16.00,
+            "average_reynolds_number_at_0.7R": 0.41e6,
+            "scaling": "No scaling is applied to the results (model scale)",
+            "setup": "p1608s2",
+            "test_id": "p1608a0_frip_2"
+        }
+    },
+    "wake_measurements": {
+        "ship_speed_knots": 15.0,
+        "measuring_plane": "Perpendicular to the propeller shaft, intersecting the generator line of the propeller blade at 0.7R",
+        "angle_convention": "0 deg is top vertical position, 90 deg is to starboard",
+        "measurement_dates": {"WL1": "2021-05-26 14:34:04", "DWL": "2021-05-26 14:11:41"}
+    },
+    "appendages_on_model": ["Rudder", "Headbox"],
+    "turbulence_stimulator": "Trip wire at station 19",
+    "bilge_keels": "Not fitted on the model. Added in full scale as an appendage resistance allowance: 0.35 m high, length 0.3 x LPP.",
+    "notes": "Hydrostatic corrections are included in the principal particulars. 'ship' values are full scale, 'model' values are model scale. Values marked with '*' in the report refer to LPP.",
+    "loading_conditions": {
+        "WL1": {
+            "description": "Ballast water line",
+            "setup": "m3246a1s5",
+            "principal_particulars": {
+                "length_overall":                    {"symbol": "LOA",  "unit": "m",      "ship": 200.002, "model": 6.250},
+                "length_on_designed_waterline":      {"symbol": "LWL",  "unit": "m",      "ship": 187.385, "model": 5.856},
+                "length_between_perpendiculars":     {"symbol": "LPP",  "unit": "m",      "ship": 190.000, "model": 5.938},
+                "breadth_moulded":                   {"symbol": "B",    "unit": "m",      "ship": 32.205,  "model": 1.006},
+                "breadth_waterline":                 {"symbol": "BWL",  "unit": "m",      "ship": 32.200,  "model": 1.006},
+                "depth_to_1st_deck":                 {"symbol": "D",    "unit": "m",      "ship": 23.502,  "model": 0.734},
+                "draught_at_LPP_half":               {"symbol": "T",    "unit": "m",      "ship": 6.450,   "model": 0.202},
+                "draught_at_FP":                     {"symbol": "TFP",  "unit": "m",      "ship": 5.400,   "model": 0.169},
+                "draught_at_AP":                     {"symbol": "TAP",  "unit": "m",      "ship": 7.500,   "model": 0.234},
+                "trim_positive_aft":                 {"symbol": "t",    "unit": "m",      "ship": 2.100,   "model": 0.066},
+                "rake_of_keel":                      {"symbol": null,   "unit": "m",      "ship": 0.000,   "model": 0.000},
+                "rise_of_floor":                     {"symbol": null,   "unit": "m",      "ship": 0.000,   "model": 0.000},
+                "bilge_radius":                      {"symbol": null,   "unit": "m",      "ship": 2.000,   "model": 0.062},
+                "water_density":                     {"symbol": "rho",  "unit": "kg/m3",  "ship": 1025.87, "model": 998.82},
+                "shell_plating_thickness":           {"symbol": null,   "unit": "mm",     "ship": 2.00,    "model": 0},
+                "shell_plating_in_percent_of_displacement": {"symbol": null, "unit": "%", "ship": 0.40,    "model": 0.00},
+                "volume_displacement":               {"symbol": "V",    "unit": "m3",     "ship": 26400.1, "model": 0.806},
+                "displacement":                      {"symbol": "Delta","unit": "t",      "ship": 27191.3, "model": 0.805},
+                "prismatic_coefficient":             {"symbol": "CP",   "unit": "-",      "ship": 0.6644,  "model": 0.6644},
+                "block_coefficient":                 {"symbol": "CB",   "unit": "-",      "ship": 0.6690,  "model": 0.6690},
+                "block_coefficient_based_on_LWL":    {"symbol": "CBLW", "unit": "-",      "ship": 0.6784,  "model": 0.6784},
+                "midship_section_coefficient":       {"symbol": "CM",   "unit": "-",      "ship": 1.0070,  "model": 1.0070},
+                "LCB_from_LPP_half":                 {"symbol": "LCB",  "unit": "m",      "ship": 4.016,   "model": 0.126},
+                "LCB_from_LPP_half_percent":         {"symbol": "LCB",  "unit": "% LPP",  "ship": 2.114,   "model": 2.114},
+                "LCB_from_AP":                       {"symbol": "LCB",  "unit": "m",      "ship": 99.016,  "model": 3.094},
+                "wetted_surface_of_naked_hull":      {"symbol": "SBH",  "unit": "m2",     "ship": 6322.41, "model": 6.174},
+                "wetted_surface":                    {"symbol": "S",    "unit": "m2",     "ship": 6322.41, "model": 6.174},
+                "wetted_surface_of_transom_stern":   {"symbol": "AT",   "unit": "m2",     "ship": 0.00,    "model": 0.000},
+                "transverse_projected_area_above_WL":{"symbol": "AV",   "unit": "m2",     "ship": 846.00,  "model": 0.571}
+            },
+            "hydrostatic_corrections": {
+                "columns": ["S [m2]", "Vol [m3]", "LCB [m]"],
+                "rows": {
+                    "from_hydrostatics":            [6242.64, 26378.168, 99.098],
+                    "transom":                      [0.00, 0.000, 0.000],
+                    "rudder":                       [79.76, 21.919, 0.210],
+                    "rudder_box":                   [0.00, 0.000, 0.000],
+                    "naked_hull":                   [6322.41, 26400.088, 99.016],
+                    "bilge_keels_full_scale_only":  [79.80, 0.000, 95.000],
+                    "sum_appendices_model_corrections": [0.00, 0.000, 0.000],
+                    "appended_hull_model_corrections":  [6322.41, 26400.088, 99.016]
+                }
+            },
+            "resistance_analysis": {
+                "form_factor_1_plus_k": 1.0743,
+                "CAAM_x1e3": 0.0958,
+                "CAAS_x1e3": 0.1349,
+                "correlation_coefficient_CA_x1e3": -0.1300,
+                "tank_water_temperature_degC": 16.2,
+                "tank_water_kinematic_viscosity_m2_s": 1.10e-6,
+                "sea_water_temperature_degC": 15.0,
+                "sea_water_kinematic_viscosity_m2_s": 1.19e-6,
+                "towing_test_setup": "m3246a1s1",
+                "towing_test_id": "m3246a1_slep_1"
+            },
+            "appendages_for_resistance_scaling": [
+                {"name": "Bilge keels", "wetted_surface_ship_m2": 79.8, "wetted_surface_model_m2": 0.0, "flow_length_ship_m": 57.0, "form_factor_k": 0.200, "wake_fraction_w": 0.100, "roughness_ship_um": 0.0}
+            ]
+        },
+        "DWL": {
+            "description": "Design water line",
+            "setup": "m3246a0s11",
+            "principal_particulars": {
+                "length_overall":                    {"symbol": "LOA",  "unit": "m",      "ship": 200.002, "model": 6.250},
+                "length_on_designed_waterline":      {"symbol": "LWL",  "unit": "m",      "ship": 196.942, "model": 6.154},
+                "length_between_perpendiculars":     {"symbol": "LPP",  "unit": "m",      "ship": 190.000, "model": 5.938},
+                "breadth_moulded":                   {"symbol": "B",    "unit": "m",      "ship": 32.205,  "model": 1.006},
+                "breadth_waterline":                 {"symbol": "BWL",  "unit": "m",      "ship": 32.200,  "model": 1.006},
+                "depth_to_1st_deck":                 {"symbol": "D",    "unit": "m",      "ship": 23.502,  "model": 0.734},
+                "draught_at_LPP_half":               {"symbol": "T",    "unit": "m",      "ship": 11.000,  "model": 0.344},
+                "draught_at_FP":                     {"symbol": "TFP",  "unit": "m",      "ship": 11.000,  "model": 0.344},
+                "draught_at_AP":                     {"symbol": "TAP",  "unit": "m",      "ship": 11.000,  "model": 0.344},
+                "trim_positive_aft":                 {"symbol": "t",    "unit": "m",      "ship": 0.000,   "model": 0.000},
+                "rake_of_keel":                      {"symbol": null,   "unit": "m",      "ship": 0.000,   "model": 0.000},
+                "rise_of_floor":                     {"symbol": null,   "unit": "m",      "ship": 0.000,   "model": 0.000},
+                "bilge_radius":                      {"symbol": null,   "unit": "m",      "ship": 2.000,   "model": 0.062},
+                "water_density":                     {"symbol": "rho",  "unit": "kg/m3",  "ship": 1025.87, "model": 998.82},
+                "shell_plating_thickness":           {"symbol": null,   "unit": "mm",     "ship": 2.00,    "model": 0},
+                "shell_plating_in_percent_of_displacement": {"symbol": null, "unit": "%", "ship": 0.40,    "model": 0.00},
+                "volume_displacement":               {"symbol": "V",    "unit": "m3",     "ship": 48956.7, "model": 1.494},
+                "displacement":                      {"symbol": "Delta","unit": "t",      "ship": 50424.0, "model": 1.492},
+                "prismatic_coefficient":             {"symbol": "CP",   "unit": "-",      "ship": 0.7308,  "model": 0.7308},
+                "block_coefficient":                 {"symbol": "CB",   "unit": "-",      "ship": 0.7275,  "model": 0.7275},
+                "block_coefficient_based_on_LWL":    {"symbol": "CBLW", "unit": "-",      "ship": 0.7018,  "model": 0.7018},
+                "midship_section_coefficient":       {"symbol": "CM",   "unit": "-",      "ship": 0.9955,  "model": 0.9955},
+                "LCB_from_LPP_half":                 {"symbol": "LCB",  "unit": "m",      "ship": 4.329,   "model": 0.135},
+                "LCB_from_LPP_half_percent":         {"symbol": "LCB",  "unit": "% LPP",  "ship": 2.279,   "model": 2.279},
+                "LCB_from_AP":                       {"symbol": "LCB",  "unit": "m",      "ship": 99.329,  "model": 3.104},
+                "wetted_surface_of_naked_hull":      {"symbol": "SBH",  "unit": "m2",     "ship": 8576.74, "model": 8.376},
+                "wetted_surface":                    {"symbol": "S",    "unit": "m2",     "ship": 8576.74, "model": 8.376},
+                "wetted_surface_of_transom_stern":   {"symbol": "AT",   "unit": "m2",     "ship": 1.82,    "model": 0.002},
+                "transverse_projected_area_above_WL":{"symbol": "AV",   "unit": "m2",     "ship": 700.00,  "model": 0.393}
+            },
+            "hydrostatic_corrections": {
+                "columns": ["S [m2]", "Vol [m3]", "LCB [m]"],
+                "rows": {
+                    "from_hydrostatics":            [8485.26, 48927.625, 99.388],
+                    "transom_area":                 [-1.82, 0.000, 0.000],
+                    "rudder":                       [79.76, 21.919, 0.120],
+                    "rudder_box":                   [13.53, 7.172, 0.000],
+                    "naked_hull":                   [8576.74, 48956.715, 99.329],
+                    "bilge_keels_full_scale_only":  [79.80, 0.000, 95.000],
+                    "sum_appendices_model_corrections": [0.00, 0.000, 0.000],
+                    "appended_hull_model_corrections":  [8576.74, 48956.715, 99.329]
+                }
+            },
+            "resistance_analysis": {
+                "form_factor_1_plus_k": 1.1208,
+                "CAAM_x1e3": 0.0486,
+                "CAAS_x1e3": 0.0823,
+                "correlation_coefficient_CA_x1e3": -0.1300,
+                "tank_water_temperature_degC": 16.2,
+                "tank_water_kinematic_viscosity_m2_s": 1.10e-6,
+                "sea_water_temperature_degC": 15.0,
+                "sea_water_kinematic_viscosity_m2_s": 1.19e-6,
+                "towing_test_setup": "m3246a0s6",
+                "towing_test_id": "m3246a0_slep_1"
+            },
+            "appendages_for_resistance_scaling": [
+                {"name": "Bilge keels", "wetted_surface_ship_m2": 79.8, "wetted_surface_model_m2": 0.0, "flow_length_ship_m": 57.0, "form_factor_k": 0.200, "wake_fraction_w": 0.100, "roughness_ship_um": 0.0}
+            ]
+        }
+    }
+}

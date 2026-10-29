@@ -29,3 +29,7 @@ The SOBC-1 is heavily used within projects at SINTEF Ocean, and therefore also i
 - Krasilnikov, V., Skjefstad, V., 2023: *SOBC-1 – an open science validation dataset for conventional and wind-assisted ship propulsion*. 25th Numerical Towing Tank Symposium, Ericeira, Portugal. [Link](https://blueoasis.pt/wp-content/uploads/2023/10/Nutts2023_proceedings_v4.pdf)
 
 - Johannessen, J.T., Sileo, L., Koushan, K., Krasilnikov, V., Froitzheim, S., Schulze, R., 2024: *Numerical and experimental study of a series of contrarotating propellers*. Eighth International Symposium on Marine Propulsors, Berling, Gerimany. [Link](https://d-nb.info/132802640X/34) 
+
+- Steen, S., Portillo-Juan, A., Saettone, S., 2025: *Model propulsion tests in head and following waves of a bulk carrier*, Applied Ocean Research, Volume 154.  [DOI](https://doi.org/10.1016/j.apor.2024.104405)
+
+- Sauder, T., Kramer, J. V., 2026: *Cyber-Physical Testing of Wind-Assisted Ships: Recent Developments and Open Data Set for the SOBC-1 Bulk Carrier*, Journal of Sailing Technology. [DOI](https://doi.org/10.5957/jst/2026.11.1.453)

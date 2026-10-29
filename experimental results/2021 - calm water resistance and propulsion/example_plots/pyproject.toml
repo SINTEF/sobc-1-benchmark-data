@@ -1,0 +1,13 @@
+[project]
+name = "sobc-1-calm-water-example-plots"
+version = "0.1.0"
+description = "Example scripts for plotting the SOBC-1 calm water resistance, open water and wake data"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "plotly",
+]
+
+[tool.uv]
+package = false
